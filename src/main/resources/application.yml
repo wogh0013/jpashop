@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: jpashop
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jpashop_db
+    username: postgres
+    password: wo0013
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show-sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org.hibernate.SQL: debug
